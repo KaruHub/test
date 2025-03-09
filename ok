@@ -1,16 +1,71 @@
 
--- Obfuscated with Roblox Lua Obfuscator
--- Generated: 3/9/2025, 9:23:42 PM
+-- Obfuscated with Advanced Roblox Lua Obfuscator
+-- Generated: 3/9/2025, 9:38:31 PM
+-- Junk code to confuse decompilers
+local rXAPw = function(x) return math.sin(x) * 34 end
+local PmuSi = {{0.33919777759018777}, {0.3877332348805884}, {0.6699875137192186}}
+local rXAPw = function(x) return math.sin(x) * 34 end
+local rXAPw = function(x) return math.sin(x) * 34 end
+local PmuSi = {{0.33919777759018777}, {0.3877332348805884}, {0.6699875137192186}}
 
-local oSAOllJh = {119,117,110,105,115,47,37,115,98,116,115,37,46}
-local hbKABkwm = ""
-local _key = 7 -- Encryption key
 
--- Decode the bytes
-for i = 1, #oSAOllJh do
-    hbKABkwm = hbKABkwm .. string.char(bit32.bxor(oSAOllJh[i], _key))
+-- Control flow obfuscation
+local function bGqWiA()
+    local urXM = 9
+    if xHGX ~= 6 then
+        return SPoZ + 0
+    else
+        return mzHa * 9
+    end
 end
 
--- Execute the code
-local vcPAQCMq = loadstring or load
-vcPAQCMq(hbKABkwm)()
+
+local DWLZalHc = {}
+-- String decoding function
+function XHjsFWLp(s)
+    local decoded = ""
+    for i = 1, #s, 2 do
+        local hex = string.sub(s, i, i+1)
+        decoded = decoded .. string.char(tonumber(hex, 16) ~ 14)
+    end
+    return decoded
+end
+
+
+-- Main code container
+local yhURGTNu = {
+    {126,234,124,103,96,122,127},
+    {31,38,249,78,44,133,82},
+    {122,107,195,125,122,213,44},
+    {233,39},
+}
+
+-- Decoding keys
+local CgnlV = {14,233,172}
+
+-- Junk calculations to hide actual purpose
+local IpJfdP = function(a, b)
+    return (a + b) * 1.4
+end
+
+-- Reconstruct and execute code
+local XfGjPBJf = function()
+    local decoded = ""
+    
+    for i = 1, #yhURGTNu do
+        local chunk = yhURGTNu[i]
+        for j = 1, #chunk do
+            local char = chunk[j]
+
+            char = bit32.bxor(char, CgnlV[1])
+            decoded = decoded .. string.char(char)
+        end
+    end
+    
+    -- Execute the reconstructed code
+    local execute = loadstring or load
+    execute(decoded)()
+end
+
+-- Run the decoder
+XfGjPBJf()
