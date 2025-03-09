@@ -1,12 +1,16 @@
 
 -- Obfuscated with Roblox Lua Obfuscator
--- Generated: 3/9/2025, 9:19:32 PM
+-- Generated: 3/9/2025, 9:23:42 PM
 
-local cqswNxXG = {112,114,105,110,116,40,116,101,115,116,41}
-local XHvhQnEu = ""
+local oSAOllJh = {119,117,110,105,115,47,37,115,98,116,115,37,46}
+local hbKABkwm = ""
+local _key = 7 -- Encryption key
 
-for i = 1, #cqswNxXG do
-    XHvhQnEu = XHvhQnEu .. string.char(cqswNxXG[i])
+-- Decode the bytes
+for i = 1, #oSAOllJh do
+    hbKABkwm = hbKABkwm .. string.char(bit32.bxor(oSAOllJh[i], _key))
 end
 
-return loadstring(XHvhQnEu)()
+-- Execute the code
+local vcPAQCMq = loadstring or load
+vcPAQCMq(hbKABkwm)()
