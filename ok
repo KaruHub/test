@@ -1,71 +1,155 @@
 
--- Obfuscated with Advanced Roblox Lua Obfuscator
--- Generated: 3/9/2025, 9:38:31 PM
--- Junk code to confuse decompilers
-local rXAPw = function(x) return math.sin(x) * 34 end
-local PmuSi = {{0.33919777759018777}, {0.3877332348805884}, {0.6699875137192186}}
-local rXAPw = function(x) return math.sin(x) * 34 end
-local rXAPw = function(x) return math.sin(x) * 34 end
-local PmuSi = {{0.33919777759018777}, {0.3877332348805884}, {0.6699875137192186}}
+-- Extremely obfuscated with Advanced Roblox Lua Obfuscator
+-- Generated: 3/9/2025, 9:40:05 PM
 
 
--- Control flow obfuscation
-local function bGqWiA()
-    local urXM = 9
-    if xHGX ~= 6 then
-        return SPoZ + 0
-    else
-        return mzHa * 9
+function zqVjlBoF(OUbX)
+    local qWHGP = 24
+    for qAB = 1, 9 do
+        MTBNp = IEQdn + 2
     end
+    return zlnaA
 end
 
-
-local DWLZalHc = {}
--- String decoding function
-function XHjsFWLp(s)
-    local decoded = ""
-    for i = 1, #s, 2 do
-        local hex = string.sub(s, i, i+1)
-        decoded = decoded .. string.char(tonumber(hex, 16) ~ 14)
+function fydfiyNv(QhmX)
+    local EDLIj = 13
+    for qnQ = 1, 7 do
+        SKJIh = GsJKI + 4
     end
-    return decoded
+    return jMGPu
 end
 
+function rsRBeMih(hxRH)
+    local mHqEJ = 11
+    for XDf = 1, 7 do
+        hzuis = whcNS + 9
+    end
+    return ACzZb
+end
 
--- Main code container
-local yhURGTNu = {
-    {126,234,124,103,96,122,127},
-    {31,38,249,78,44,133,82},
-    {122,107,195,125,122,213,44},
-    {233,39},
+function TUyjIGpJ(WpMD)
+    local Zfmxz = 42
+    for ZhU = 1, 0 do
+        qYJHR = UlRMU + 4
+    end
+    return KOOel
+end
+
+function BqhvEStV(nojS)
+    local mPdxH = 29
+    for xlA = 1, 8 do
+        emoFp = zcLBy + 8
+    end
+    return tjMxw
+end
+
+function mMEVDCbN(ZfUz)
+    local AUCVH = 40
+    for CZT = 1, 8 do
+        QvEjX = dnRvR + 5
+    end
+    return vLdmN
+end
+
+function rdylZbLv(mKHB)
+    local sdhpT = 2
+    for lOr = 1, 5 do
+        PCCkf = PNNCw + 9
+    end
+    return DXTat
+end
+
+function oGSbHzpA(ntAe)
+    local sUwDv = 51
+    for GFf = 1, 8 do
+        HVMSI = GjMhN + 3
+    end
+    return uoEGz
+end
+
+function ewKvjPkm(vXCb)
+    local HltFx = 69
+    for uwc = 1, 1 do
+        aGugm = jRbXO + 3
+    end
+    return ZsjAp
+end
+
+function ySgXNvxy(wcty)
+    local hBdLt = 9
+    for frj = 1, 9 do
+        beapg = MBwkD + 6
+    end
+    return ckHPX
+end
+
+-- String encoding/decoding implementation
+local jxieWzav = function(t, k)
+    local result = ""
+    for i = 1, #t do
+        result = result .. string.char(bit32.bxor(t[i], k))
+    end
+    return result
+end
+
+-- VM implementation
+local ygdfTxpa = {
+    -- Instruction opcodes
+    opcodes = {
+        LOAD = 12,
+        STORE = 115,
+        ADD = 218,
+        SUB = 306,
+        MUL = 448,
+        DIV = 586,
+        CONCAT = 646,
+        CALL = 769,
+        RET = 878,
+        JMP = 952
+    },
+    
+    -- VM registers
+    PftdJA = {},
+    
+    -- String table
+    kqITNmjz = {
+        {6,4,31,24,2,94,84,2,19,5,2,84,95}
+    }
 }
 
--- Decoding keys
-local CgnlV = {14,233,172}
-
--- Junk calculations to hide actual purpose
-local IpJfdP = function(a, b)
-    return (a + b) * 1.4
-end
-
--- Reconstruct and execute code
-local XfGjPBJf = function()
-    local decoded = ""
+-- VM execution function
+function sPFwNRIL(bytecode)
+    local pc = 1
+    local stack = {}
+    local stackTop = 0
     
-    for i = 1, #yhURGTNu do
-        local chunk = yhURGTNu[i]
-        for j = 1, #chunk do
-            local char = chunk[j]
-
-            char = bit32.bxor(char, CgnlV[1])
-            decoded = decoded .. string.char(char)
+    while pc <= #bytecode do
+        local opcode = bytecode[pc]
+        pc = pc + 1
+        
+        if opcode == ygdfTxpa.opcodes.LOAD then
+            local idx = bytecode[pc]
+            pc = pc + 1
+            stackTop = stackTop + 1
+            stack[stackTop] = ygdfTxpa.kqITNmjz[idx]
+        
+        elseif opcode == ygdfTxpa.opcodes.CALL then
+            local arg = bytecode[pc]
+            pc = pc + 1
+            
+            local scriptData = stack[stackTop]
+            stackTop = stackTop - 1
+            
+            -- Decode and execute the script
+            local script = jxieWzav(scriptData, 118)
+            local fn = loadstring or load
+            fn(script)()
+            
+        elseif opcode == ygdfTxpa.opcodes.RET then
+            break
         end
     end
-    
-    -- Execute the reconstructed code
-    local execute = loadstring or load
-    execute(decoded)()
 end
 
--- Run the decoder
-XfGjPBJf()
+-- Run the VM with obfuscated bytecode
+sPFwNRIL({12,0,769,0,878,0})
